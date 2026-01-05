@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="cont">
+
+                <nav class="nav">
+                    <h2> My Diary </h2>
+
+
+
+                <div class="profile">
+                    <ul>
+                        <a href="./index.html">Home</a>
+                        <a href="./create.html">create new</a>
+                    </ul>
+                <p></p>
+                
+                <button class="logout" onclick="logout()">Logout</button>
+                </div>
+            </nav>
+
+    <div class="form">
+        <input id="title" type="text" placeholder="Title">
+        <textarea id="description" name="" id="" placeholder="description"></textarea>
+        <p id="chanc"></p>
+        <button class="btn_add" onclick="AddNote()">Add</button>
+      
+    </div>
+
+    </div>
+
+    <script>
+        document.querySelector('.nav').style.display='flex';
+const active_users=JSON.parse(localStorage.getItem('active_user'));
+
+        if(active_users){
+            document.querySelector('.nav p').innerHTML=active_users.username;
+        } else {
+            location.href = '/index.html'
+        }
+        
+        function logout(){
+localStorage.removeItem('active_user');
+ location.href = '/index.html'
+}
+
+        function AddNote(){
+            const getNotes = JSON.parse(localStorage.getItem("notes"))
+            const title = document.getElementById('title').value
+            const description = document.getElementById('description').value
+const chanc = document.getElementById('chanc');
+            const ob = {
+                id : Date.now(),
+                title,
+                description,
+                createdBy: JSON.parse(localStorage.getItem("active_user")).username
+            }
+
+         if(title.trim()==="" || description.trim()==""){
+           chanc.innerHTML='All fields are required'
+           chanc.style.color='red';
+            return;
+        }
+
+            if(getNotes){
+                localStorage.setItem("notes",JSON.stringify([...getNotes,ob]))
+            } else {
+                localStorage.setItem("notes",JSON.stringify([ob]))
+
+            }
+            location.href = '/index.html'
+
+
+        }
+    </script>
+</body>
+</html>

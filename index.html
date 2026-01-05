@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cont">
+
+                <nav class="nav">
+                    <h2> My Diary </h2>
+
+
+
+                <div class="profile">
+                    <ul>
+                        <a href="./index.html">Home</a>
+                        <a href="./create.html">create new</a>
+                    </ul>
+                <p>Renad</p>
+                <button class="logout" onclick="logout()">Logout</button>
+               
+                </div>
+            </nav>
+
+             <div class="notes">
+
+       <!-- <script>
+        location.href = 'https://www.youtube.com/watch?v=0b3vT1KBOUc'
+       </script> -->
+            </div>
+    </div>
+                <div class="form login">
+            <h2>Login Page</h2>
+            <input type="text" placeholder="Enter your username" id="username">
+            <input type="text" placeholder="Enter your password" id="password">
+                            <p id="change"></p>
+
+            <button class="login" onclick="login()">Login</button>
+          <p>you dont have an account  ,<span onclick="getsignup()">Sign up</span></p>
+        </div>
+        <div class="form signup">
+            <h2>Create New Account</h2>
+            <input type="text" id="username_signup"  placeholder="Enter your username">
+            <input type="number" id="paswword_signup" placeholder="Enter your password">
+            <input type="number" id="age_signup" placeholder="Confirm your password">   
+            <input type="text" id="email_signup" placeholder="Enter your email">
+            <button class="silt" onclick="signup()">Sign up</button>
+            <p id="chank"></p>
+            <p>I have an account ,<span onclick="getlogin()">Login</span></p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+    <script  src="main.js"></script>
+</body>
+</html>

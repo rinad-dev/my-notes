@@ -1,0 +1,168 @@
+*{
+    padding: 0%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.cont{
+    max-width: 900px;
+    margin: auto;
+    padding: 0px 20px;
+
+}
+.nav p{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.form{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    padding: 10px 20px;
+    gap: 15px;
+}
+h2{
+    color: red;
+}
+input{
+    width: 450px;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 4px;
+    outline: none;
+ padding: 10px 20px;
+}
+textarea{
+    width: 450px;
+    height: 200px;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 4px;
+    outline: none;
+ padding: 10px 20px;
+ resize: none;
+}   
+.login button{
+        border: 1px solid grey;
+    border-radius: 4px;
+    width: 500px;
+    margin: auto;
+    outline: none;
+    background-color: rgb(255, 0, 0);
+    color:white ;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn_add {
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 500px;
+    margin: auto;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    color:white ;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.silt {
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 500px;
+    margin: auto;
+    outline: none;
+    background-color: rgb(240, 6, 6);
+    color:white ;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.logout{
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 100px;
+    margin: auto;
+    outline: none;
+    background-color: rgb(255, 0, 0);
+    color:white ;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+}
+.form p span{
+    color: blue;
+    cursor: pointer;
+}
+.form p{
+    text-align: center;
+}
+.signup{
+    display: none;
+}
+nav{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:10px ;
+    
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+p{
+    font-weight:bold ;
+}
+img{
+    width: 30px;
+    height: 30px;
+border-radius: 50%;
+border: 1px solid grey;
+}
+.not{
+    display: flex;
+    margin:40px ;
+    padding: 10px ;
+    background-color: rgba(235, 221, 221, 0.699);
+    gap: 15px;
+    border: 2px solid transparent;
+    flex-wrap: wrap;
+    box-shadow: 2px 3px 3px rgb(176, 176, 176);
+}
+
+
+.notes {
+    margin-top: 60px;
+    display: none;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.note {
+    flex: 1;
+    flex-basis: 300px;
+    background-color: #eee;
+    padding: 10px;
+
+    border-radius: 4px;
+
+    h2 {
+        text-align: start;
+    }
+}
+
+.note h3 {
+    margin-top: 15px;
+    font-size: 14px;
+    color: grey;
+    text-align: end;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(94, 13, 47);
+    padding: 4px;
+    font-weight: bold;
+}
